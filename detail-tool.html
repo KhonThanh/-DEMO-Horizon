@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng chỉ số</title>
+    <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="container-f" data-include="./component/header.html"></header>
+    <main class="container-f flex flex-col center-hor">
+        <section class="flex bg-gray container-f">
+            <div class="container-l nav-bar__container">
+                <a href="#" class="nav-bar__item">Trang chủ</a>
+                <a href="#" class="nav-bar__item">Công cụ</a>
+                <a href="#" class="nav-bar__item">"chi tiết công cụ"</a>
+            </div>
+        </section>
+        <section class="container-f container-padding bg-white-second">
+            <div class="container-l flex gap-30">
+                <aside class="product-sidebar bg-white" data-include="./component/sidebar.html"></aside>
+                <div class="tool-content__container bg-white flex flex-col gap-20">
+                    <img src="./img/blog/news.png" alt="">
+                    <h1>BẢO MẬT EMAIL TỐI ĐA: HƯỚNG DẪN SỬ DỤNG DIGICERT S/MIME CERTIFICATE LINTER</h1>
+
+                    <p><strong>Cập nhật lần cuối:</strong> 10/03/2026</p>
+
+                    <p>
+                        Đảm bảo chứng chỉ email của bạn tuân thủ tuyệt đối các tiêu chuẩn bảo mật mới nhất từ các tổ
+                        chức CA/Browser
+                        một cách dễ dàng và nhanh chóng.
+                    </p>
+
+                    <p>
+                        Trong môi trường kỹ thuật số ngày nay, việc bảo mật email không chỉ là một lựa chọn mà là bắt
+                        buộc,
+                        đặc biệt với các cá nhân và doanh nghiệp. DigiCert đã tung ra công cụ
+                        <strong>DigiCert S/MIME Certificate Linter</strong> nhằm hỗ trợ kiểm tra và phân tích chứng chỉ
+                        S/MIME.
+                    </p>
+
+                    <p>
+                        Công cụ này hoạt động như một “trợ lý” chuyên nghiệp, giúp bạn kiểm tra chứng chỉ S/MIME của
+                        mình,
+                        đảm bảo chúng tuân thủ những yêu cầu mới nhất của CA/Browser. Dưới đây là hướng dẫn chi tiết.
+                    </p>
+
+
+                    <h2>1. CẦN CHUẨN BỊ GÌ TRƯỚC KHI KIỂM TRA?</h2>
+
+                    <p>
+                        Trước khi bắt đầu kiểm tra chứng chỉ, bạn cần chuẩn bị một số yếu tố sau để hệ thống có thể xử
+                        lý chính xác:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Định dạng được hỗ trợ:</strong> Chấp nhận tệp PEM hoặc DER.
+                        </li>
+                        <li>
+                            <strong>Định dạng không hỗ trợ:</strong> Các tệp .doc, .cer hoặc định dạng khác
+                            không đúng chuẩn có thể bị hệ thống từ chối.
+                        </li>
+                        <li>
+                            <strong>Yêu cầu về nội dung:</strong> Tệp phải là chứng chỉ thực tế (end entity certificate)
+                            và được cấp sau tháng 9/2023 để đảm bảo các tiêu chuẩn mới nhất.
+                        </li>
+                    </ul>
+
+
+                    <h2>2. CÁCH KIỂM TRA TRỰC TUYẾN (NHANH CHÓNG & TRỰC QUAN)</h2>
+
+                    <p>
+                        Nếu bạn chưa quen với dòng lệnh, phiên bản web của DigiCert là lựa chọn hoàn hảo.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Truy cập hệ thống:</strong> Mở trình duyệt và truy cập trang DigiCert S/MIME
+                            Certificate Linter.
+                        </li>
+
+                        <li>
+                            <strong>Tải lên chứng chỉ:</strong> Nhấp vào khu vực tải lên và chọn tệp .pem hoặc .der.
+                        </li>
+
+                        <li>
+                            <strong>Hệ thống phân tích:</strong>
+                            Ngay lập tức hệ thống sẽ kiểm tra chứng chỉ của bạn theo hơn 150 quy tắc bảo mật.
+                        </li>
+
+                        <li>
+                            <strong>Đọc kết quả:</strong>
+                            Bạn sẽ nhận được báo cáo chi tiết với các cấp độ:
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><strong>Critical Errors:</strong> Lỗi nghiêm trọng cần khắc phục ngay.</li>
+                        <li><strong>Warnings:</strong> Cảnh báo nên kiểm tra lại.</li>
+                        <li><strong>Notices:</strong> Thông tin bổ sung hoặc gợi ý cải thiện.</li>
+                    </ul>
+
+
+                    <h2>3. DÀNH CHO DÂN KỸ THUẬT: SỬ DỤNG CÔNG CỤ NGOẠI TUYẾN</h2>
+
+                    <p>
+                        Nếu bạn là lập trình viên hoặc quản trị hệ thống và muốn kiểm tra cục bộ (local)
+                        hoặc tích hợp vào quy trình CI/CD, DigiCert cũng cung cấp phiên bản dòng lệnh.
+                    </p>
+
+                    <h3>Hướng dẫn cài đặt</h3>
+
+                    <pre>
+pipx install xlint
+  </pre>
+
+                    <h3>Cách chạy kiểm tra cơ bản</h3>
+
+                    <pre>
+xlint -c path/to/your_certificate.pem
+  </pre>
+
+                    <p>
+                        Lệnh trên sẽ tiến hành phân tích chứng chỉ và trả về kết quả theo tiêu chuẩn
+                        S/MIME Baseline Requirements.
+                    </p>
+
+
+                    <h2>4. BỔ SUNG CÁC TÙY CHỌN NÂNG CAO (DÀNH CHO DÒNG LỆNH)</h2>
+
+                    <p>
+                        Với phiên bản CLI, bạn có thể kiểm soát quá trình kiểm tra thông qua các tùy chọn sau:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>--strict:</strong> Kiểm tra nghiêm ngặt theo toàn bộ tiêu chuẩn S/MIME.
+                        </li>
+                        <li>
+                            <strong>--debug:</strong> Hiển thị log chi tiết để hỗ trợ phân tích lỗi.
+                        </li>
+                        <li>
+                            <strong>--config:</strong> Cho phép sử dụng file cấu hình riêng.
+                        </li>
+                    </ul>
+
+
+                    <h2>5. TẠI SAO BẠN KHÔNG NÊN BỎ QUA CÔNG CỤ NÀY?</h2>
+
+                    <p>
+                        Bỏ qua bước kiểm tra có thể dẫn đến nhiều rủi ro bảo mật nghiêm trọng.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Đảm bảo tính tương thích:</strong>
+                            Chứng chỉ hoạt động ổn định trên Outlook, Gmail, Apple Mail…
+                        </li>
+
+                        <li>
+                            <strong>Tuân thủ tiêu chuẩn:</strong>
+                            Các chứng chỉ S/MIME phải đáp ứng các quy định bảo mật mới nhất.
+                        </li>
+
+                        <li>
+                            <strong>Gia tăng độ tin cậy:</strong>
+                            Email được ký số hợp lệ sẽ giúp tăng độ tin cậy với người nhận.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Lưu ý quan trọng: DigiCert S/MIME Certificate Linter chỉ là công cụ kiểm tra
+                        (audit tool), không có chức năng cấp phát hay gia hạn chứng chỉ.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <section class="container-f bg-gray container-padding">
+            <div class="container-l flex flex-col gap-20">
+                <h3>Site Reviews</h3>
+                <div class="flex gap-20 flex-wrap">
+                    <div class="flex flex-col gap-10 review-card col-2 custom-item">
+                        <div class="flex center-ver gap-10">
+                            <div class="bg-white-second review-icon">
+                                <img src="./img/icon/user.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <strong>Petar N</strong>
+                                <span class="review-star">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>
+                            "Excellent platform with a wide selection of solutions suitable just for you here you can
+                            find the right certificate just for your purposes and at the best prices. The support is
+                            very good. I highly recommend cheapsslsecurity.com to anyone who needs a certificate."
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-10 review-card col-2 custom-item">
+                        <div class="flex center-ver gap-10">
+                            <div class="bg-white-second review-icon">
+                                <img src="./img/icon/user.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <strong>Petar N</strong>
+                                <span class="review-star">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>
+                            "Excellent platform with a wide selection of solutions suitable just for you here you can
+                            find the right certificate just for your purposes and at the best prices. The support is
+                            very good. I highly recommend cheapsslsecurity.com to anyone who needs a certificate."
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-20 flex-wrap center-hor">
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container-f bg-white center-ver" data-include="./component/footer.html"></footer>
+    <section class="cta-floating container-s flex gap-20" data-include="./component/cta-floating.html"></section>
+    <section class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./js/frontend.js"></script>
+</body>
+
+</html>

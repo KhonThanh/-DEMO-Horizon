@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng chỉ số</title>
+    <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="container-f" data-include="./component/header.html"></header>
+    <main class="container-f flex flex-col center-hor">
+        <section class="flex bg-gray container-f">
+            <div class="container-l nav-bar__container">
+                <a href="#" class="nav-bar__item">Trang chủ</a>
+                <a href="#" class="nav-bar__item">csr-generator</a>
+            </div>
+        </section>
+        <section class="container-f container-padding bg-white-second">
+            <div class="container-l flex gap-30">
+                <aside class="product-sidebar bg-white" data-include="./component/sidebar.html"></aside>
+                <form class="support-form bg-white js-validate-form flex flex-col gap-20" data-form="contact">
+
+                    <h2 class="form-title">Gửi yêu cầu hỗ trợ</h2>
+
+                    <h3 class="form-section">Thông tin liên hệ</h3>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Tên công ty <span>*</span></label>
+                        <input type="text" name="company" required data-msg="Vui lòng nhập tên công ty">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Địa chỉ Email <span>*</span></label>
+                        <input type="email" name="email" required data-msg="Email không hợp lệ">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Website <span>*</span></label>
+                        <input type="text" name="website" required data-msg="Vui lòng nhập website">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Họ và tên <span>*</span></label>
+                        <input type="text" name="full_name" required minlength="3"
+                            data-msg="Vui lòng nhập họ tên (tối thiểu 3 ký tự)">
+                        <small class="error-msg"></small>
+                    </div>
+
+
+                    <h3 class="form-section">Chi tiết yêu cầu hỗ trợ</h3>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Mã giao dịch / Mã đơn hàng <span>*</span></label>
+                        <input type="text" name="order_id" required
+                            data-msg="Vui lòng nhập mã giao dịch hoặc mã đơn hàng">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Tiêu đề <span>*</span></label>
+                        <input type="text" name="subject" required data-msg="Vui lòng nhập tiêu đề">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group flex flex-col gap-10">
+                        <label>Nội dung chi tiết <span>*</span></label>
+                        <textarea name="message" rows="5" required minlength="10"
+                            data-msg="Vui lòng nhập nội dung tối thiểu 10 ký tự"></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+
+
+                    <div class="form-group captcha-box">
+                        <div class="fake-recaptcha">
+                            <input type="checkbox" name="captcha" required>
+                            <span>Tôi không phải là robot</span>
+                        </div>
+                        <small class="error-msg"></small>
+                    </div>
+
+
+                    <p class="privacy-text">
+                        Thông tin bạn cung cấp sẽ được sử dụng để phản hồi yêu cầu hỗ trợ của bạn.
+                        <a href="#">Tìm hiểu thêm về Chính sách bảo mật của chúng tôi.</a>
+                    </p>
+
+
+                    <div class="form-actions flex  gap-20">
+                        <button type="submit" class="btn-submit ">GỬI YÊU CẦU</button>
+                        <button type="reset" class="btn-reset ">ĐẶT LẠI</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <section class="container-f bg-gray container-padding">
+            <div class="container-l flex flex-col gap-20">
+                <h3>Site Reviews</h3>
+                <div class="flex gap-20 flex-wrap">
+                    <div class="flex flex-col gap-10 review-card col-2 custom-item">
+                        <div class="flex center-ver gap-10">
+                            <div class="bg-white-second review-icon">
+                                <img src="./img/icon/user.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <strong>Petar N</strong>
+                                <span class="review-star">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>
+                            "Excellent platform with a wide selection of solutions suitable just for you here you can
+                            find the right certificate just for your purposes and at the best prices. The support is
+                            very good. I highly recommend cheapsslsecurity.com to anyone who needs a certificate."
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-10 review-card col-2 custom-item">
+                        <div class="flex center-ver gap-10">
+                            <div class="bg-white-second review-icon">
+                                <img src="./img/icon/user.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <strong>Petar N</strong>
+                                <span class="review-star">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>
+                            "Excellent platform with a wide selection of solutions suitable just for you here you can
+                            find the right certificate just for your purposes and at the best prices. The support is
+                            very good. I highly recommend cheapsslsecurity.com to anyone who needs a certificate."
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-20 flex-wrap center-hor">
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                    <div class="flex flex-col center-ver gap-10 product-card col-4 custom-item">
+                        <img src="./img//brand/pro-digicert.svg" alt="Digicert">
+                        <p>Fastest and cheapest way to secure your domain within minutes.</p>
+                        <strong>From <span>$854.87/yr.</span></strong>
+                        <a href="#" class="bg-secondary text-color-white btn-custom flex center-hor">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container-f bg-white center-ver" data-include="./component/footer.html"></footer>
+    <section class="cta-floating container-s flex gap-20" data-include="./component/cta-floating.html"></section>
+    <section class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./js/frontend.js"></script>
+</body>
+
+</html>

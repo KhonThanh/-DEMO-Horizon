@@ -6,7 +6,19 @@
 
 @media screen and (max-width: 1073px) {}
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
+    .header-top .menu-container__item {
+        display: none !important;
+    }
+
+    .header-top .menu-container__bar.active {
+        display: flex !important;
+    }
+
+    .header-top {
+        align-items: center !important;
+    }
+}
 
 @media screen and (max-width: 835px) {}
 
@@ -32,13 +44,6 @@
         font-size: 24px;
     }
 
-    .menu-container__item.active {
-        display: none !important;
-    }
-    
-    .menu-container__bar.active {
-        display: flex !important;
-    }
 }
 
 @media screen and (max-width : 700px) {}

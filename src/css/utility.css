@@ -1,8 +1,7 @@
 .bg-primary { background-color: var(--primary-color);}
 .bg-secondary { background-color: var(--secondary-color);}
-.bg-white {background-color: var(--white-background-color);}
-.bg-white-second {background-color: var(--white-background-second-color);}
-.bg-green {background-color: var(--green-color);}
+.bg-white {background-color: var(--white-color);}
+.bg-white-second {background-color: var(--second-white-color);}
 .bg-black {background-color: var(--black-color);}
 .bg-red {background-color: var(--error-color);}
 
@@ -13,7 +12,9 @@
 .flex-wrap{flex-wrap: wrap;}
 .flex-1{flex-grow: 1;}
 .center-hor{justify-content: center;}
+.right-hor{justify-content: right;}
 .center-ver{align-items: center;}
+.end-ver {align-items: end;}
 .container-padding { padding: 60px 0px;}
 .jus-content{ justify-content: space-between;}
 .gap-30{gap: 30px;}

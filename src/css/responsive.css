@@ -1,18 +1,12 @@
-@media screen and (max-width: 1270px) {
-}
+@media screen and (max-width: 1270px) {}
 
-@media screen and (min-width: 1200px) {
-}
+@media screen and (min-width: 1200px) {}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {}
 
-}
+@media screen and (max-width: 1073px) {}
 
-@media screen and (max-width: 1073px) {
-}
-
-@media screen and (max-width: 900px) {
-}
+@media screen and (max-width: 900px) {}
 
 @media screen and (max-width: 835px) {}
 
@@ -37,11 +31,17 @@
     .text-header-size {
         font-size: 24px;
     }
+
+    .menu-container__item.active {
+        display: none !important;
+    }
+    
+    .menu-container__bar.active {
+        display: flex !important;
+    }
 }
 
-@media screen and (max-width : 700px) {
-
-}
+@media screen and (max-width : 700px) {}
 
 @media screen and (max-width: 590px) {
     header {

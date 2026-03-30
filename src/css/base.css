@@ -95,4 +95,11 @@ a {
 
 p {
   line-height: 1.5;
+  color: var(--black-color);
+  font-size: var(--font-size-base);
+}
+
+input,
+textarea{
+    caret-color: var(--black-color);
 }

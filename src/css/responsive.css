@@ -41,9 +41,23 @@
     }
 
     .text-header-size {
-        font-size: 24px;
+        font-size: calc(var(--font-size-base) + 10px);
     }
 
+    .intro-image img,
+    .intro-image,
+    .history-image img,
+    .history-image,
+    .philosophy-image img,
+    .philosophy-image,
+    .calc-image,
+    .about-image,
+    .calc-image img,
+    .about-image img {
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        height: unset;
+    }
 }
 
 @media screen and (max-width : 700px) {}

@@ -781,11 +781,120 @@ document.addEventListener("DOMContentLoaded", () => {
         appendDots: $('.custom-dots')
       }
     });
+    initSlickSlider({
+      mainSelector: '.service-list',
+      minSlides: 8,
+      mainOptions: {
+        infinite: true,
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        fade: false,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      }
+    });
+    initSlickSlider({
+      mainSelector: '.news-list',
+      minSlides: 6,
+      mainOptions: {
+        infinite: true,
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        fade: false,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      }
+    });
+    initSlickSlider({
+      mainSelector: '.partners-list',
+      minSlides: 12,
+      mainOptions: {
+        infinite: true,
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        fade: false,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      }
+    });
     // 🟡 roll to the top
     initScrollToTop();
     // ✨ 4️⃣ HIỆU ỨNG ẢNH & REVEAL
     applyImageEnhancements();
     initRevealEffect();
+    validateField('.js-validate-form')
   });
 });
 

@@ -49,7 +49,7 @@
 .italic { font-style: italic; }
 
 .text-center { text-align: center; }
-.text-header-size{ font-size: 38px;}
+.text-header-size{ font-size: calc(var(--font-size-base) + 22px);}
 .pos-rel { position: relative; }
 .pos-abs { position: absolute; }
 .pos-fixed { position: fixed; }

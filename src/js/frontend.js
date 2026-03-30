@@ -889,6 +889,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
       }
     });
+
+    initToggleSystem([
+      {
+        trigger: ".pagination-btn__custom.page-num",
+        behavior: "activate",
+        activeClass: "active",
+      }
+    ]);
     // 🟡 roll to the top
     initScrollToTop();
     // ✨ 4️⃣ HIỆU ỨNG ẢNH & REVEAL
